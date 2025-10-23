@@ -14,7 +14,7 @@ ROLLING_WINDOW = 10
 def load_player_value():
     """Loads the BPM map we created."""
     try:
-        df = pd.read_csv('player_value_map.csv')
+        df = pd.read_csv('player_value_map.csv', encoding='utf-8')
         # create a multi-index for fast lookups
         df['Season'] = df['Season'].apply(lambda x: f"{x-1}-{str(x)[-2:]}")
         df = df.set_index(['Season', 'Player'])
