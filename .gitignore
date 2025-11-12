@@ -120,3 +120,6 @@ nbaprediction_venv/  # Your specific virtual environment
 # OS generated files
 .DS_Store
 Thumbs.db
+
+*.csv
+*.pkl
